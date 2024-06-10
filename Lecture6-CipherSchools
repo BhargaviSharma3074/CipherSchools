@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./test.css">
+        <title>Page Title</title>
+    </head>
+    <body>
+        <!-- <h1>My heading 1</h1>
+        <h2>My heading 2</h2>
+        <h3>My heading 3</h3>
+        <h4>My heading 4</h4>
+        <h5>My heading 5</h5>
+        <h6>My heading 6</h6>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+        <a href="https://cipherschools.com">Go to CipherSchools</a>
+        <img 
+        src="https://ik.imagekit.io/cipherschools/CipherMentors/Harshit-Coding_Mentor.png"
+        alt="Sample image">
+        <button>Click</button>
+        <blockquote>CipherSchools is amazing</blockquote>
+        <q>CipherSchools is amazing</q>
+        <blockquote cite="https://en.wikipedia.org/wiki/Harry_Potter">
+        Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's conflict with Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic, and subjugate all wizards and Muggles (non-magical people).
+        </blockquote>
+        <p><abbr title="World Heath Organization">WHO</abbr> is a good organization</p>
+        <address>Sherlock Holmes<br>221B Baker Street</address>
+        <h5>Unordered list:</h5>
+        <ul>
+            <li>coffee</li>
+            <li>milk</li>
+            <li>tea</li>
+        </ul>
+        <h5>Ordered list:</h5>
+        <ol>
+            <li>coffee</li>
+            <li>milk</li>
+            <li>tea</li>
+        </ol>
+        <h5>Description list:</h5>
+        <dl>
+            <dt>coffee</dt>
+            <dd>-beverage</dd>
+            <dt>milk</dt>
+            <dd>-white beverage</dd>
+            <dt>tea</dt>
+            <dd>-brown beverage</dd>
+        </dl>
+        <p>para 0</p>
+        <div>
+        <p>para 1</p>
+        <p class="center-para">hello.<br>this is br tag</p>
+        <hr>
+        <b>Bold</b>
+        <i>Italics</i>
+        <u>Underline</u>
+        <p id="mypara">This is <span style="color: blueviolet;">span tag</span></p>
+        </div>
+        <p>para 2</p>
+        <p>para 3</p>
+        <div>
+            <a href="https://google.com">Google</a>
+            <a href="https://youtube.com">YouTube</a>
+        </div> -->
+
+        ===============================================================
+
+        <!-- DOM - document object model -->
+        <!-- document.cipherPara -->
+        
+        <!-- document.val -->
+        <form name="val">
+            <input name="name" value="Shantanu">
+        </form>
+        <!-- document.val.name -->
+        <input name="name" value="Shantanu">
+        
+        <!-- docuent.val.name.value
+        "Shantanu" -->
+
+    </body>
+</html>
