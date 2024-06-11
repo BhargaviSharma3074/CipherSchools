@@ -1,0 +1,147 @@
+// var x = 15;
+// {
+//     //let x = 5;
+//     const x = 5;
+//     console.log(x);
+//     // x=6;
+//     // console.log(x);
+// }
+// console.log(x);
+
+
+// //normal function
+// var x = function(x, y)
+// {
+//     return x+y;
+// };
+// console.log(x(5,6));
+
+//arrow function
+// const x = (x, y) =>
+//     {
+//         return x+y;
+//     };
+// console.log(x(5,6));
+
+//shorthand syntax of arrow function
+// const x = (x,y) => x+y;
+//console.log(x(5,6));
+
+//spread operator
+const q1 = ["Jan", "Feb", "March"];
+const q2 = ["Apr", "May", "June"];
+const q3 = ["July", "Aug", "Sept"];
+const q4 = ["Oct", "Nov", "Dec"];
+
+
+//example 2
+const year = [...q1, ...q2, ...q3, ...q4];
+console.log(year);
+//example 3
+const mynum = [23, 45, 23, 567, 89, -1];
+let maxvalue = Math.max(...mynum);
+console.log(maxvalue);
+
+
+const mynumbers = [23, 45, 34, 6, 34, -1];
+let sum = 0;
+for (let num of mynumbers)
+    {
+        sum = sum+num;
+    }
+    console.log(sum);
+
+const name1 = "CipherSchools";
+let text = "";
+for (let ch of name1)
+    {
+        text+=  ch+" ";
+    }
+    console.log(text);
+
+//map example
+const fruits = new Map([
+    ["apples",500], 
+    ["bananas", 300], 
+    ["oranges", 200]
+]);
+console.log(fruits);
+console.log(fruits.get("oranges"));
+
+//set example
+const letters = new Set();
+letters.add("a");
+letters.add("b");
+letters.add("a");
+console.log(letters);
+
+//js class
+class Car
+{
+    constructor(name, mfgyear)
+    {
+        this.name = name;
+        this.mfgyear = mfgyear;
+    }
+}
+
+const car1 = new Car("Mercedes", 2022);
+const car2 = new Car("Porsche",2020);
+console.log(car1, car2);
+
+
+//promise example
+const myfunction = () =>
+    {
+        return new Promise((resolve, reject) =>
+        {
+            setTimeout(()=>
+            {
+                console.log("this is inside promise");
+                resolve();
+            }, 2000); //waits for 2 seconds
+        });
+    };
+
+myfunction()
+.then(()=>
+{
+    console.log("Resolved");
+})
+.catch(()=>
+{
+    console.error("Rejected");
+});
+
+//symbol example (symbols are always unique)
+const person = 
+{
+    firstname: "John",
+    lastname: "Doe",
+    age: 30,
+    eyecolor: "Blue",
+};
+
+let id = Symbol("id");
+person[id] = 104111;
+console.log(person);
+
+//default parameter value of a function
+const add = (a,b) => a+b;
+console.log(add(10,11));
+const add1 = (c,d=10) => c+d;
+console.log(add1(10));
+
+
+//rest operator - ...
+const addnumers = (...args) => 
+    {
+        let sum = 0;
+        for (let arg of args)
+            {
+                sum += arg;
+            }
+            return sum;
+        //console.log(args);
+    };
+console.log(addnumers(10, 20, 30, 40, 50));
