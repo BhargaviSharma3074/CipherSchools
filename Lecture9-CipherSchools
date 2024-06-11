@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="./test.css"> -->
+        <title>Page Title</title>
+    </head>
+    <body>
+        <main>
+            <h1>My Page</h1>
+            <p>Caption goes here</p>
+
+            <article class="first_article">
+                <h2>List of amazing fruits</h2>
+                <p>Must eat fruits</p>
+                <div class="wrapper-1">
+                    <ul class="apple-list">
+                        <li class="apple">Apples</li>
+                        <li class="orange">Oranges</li>
+                        <li class="avocado">Avocados</li>
+                        <li class="grape">
+                            Grapes
+                            <ul>
+                                <li class="type-1">Moon drops</li>
+                                <li>Sultana</li>
+                                <li>Concord</li>
+                                <li>Crimson Seedless</li>
+                            </ul>
+                        </li>
+                        <li class="banana">Bananas</li>
+                    </ul>
+                    <button class="btn-1">Read Full List</button>
+                </div>
+            </article>
+
+            <article class="second_article">
+                <h2>Amazing places in Kenya</h2>
+                <p>Must visit places in Kenya</p>
+                <div class="wrapper-2">
+                    <ul class="places-list">
+                        <li>Maasai Mara</li>
+                        <li>Diani Beach</li>
+                        <li>Watamu Beach</li>
+                        <li>Amboseli National Park</li>
+                        <li>Lake Nakuru</li>
+                    </ul>
+                    <button class="btn-2">Read Full List</button>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
+
+
+<!-- ============================================================================================================= -->
+const headings = document.querySelectorAll("h2")
+undefined
+headings
+NodeList(2) [h2, h2]0: h21: h2length: 2[[Prototype]]: NodeList
+const firstheading = headings[0]
+undefined
+firstheading
+<h2>​List of amazing fruits​</h2>​
+const secondheading = heading[1]
+VM303:1 Uncaught ReferenceError: heading is not defined
+at <anonymous>:1:23
+    (anonymous) @ VM303:1
+    const secondheading = headings[1]
+    undefined
+    secondheading
+    <h2>​Amazing places in Kenya​</h2>​
+    document.querySelector(".orange").innerHTML
+    'Oranges'
+    const appleslist = document.querySelector(".apple-list")
+    undefined
+    appleslist.children
+    HTMLCollection(5) [li.apple, li.orange, li.avocado, li.grape, li.banana]0: li.apple1: li.orange2: li.avocado3:
+    li.grape4: li.bananalength: 5[[Prototype]]: HTMLCollection
+    appleslist.childNodes
+    NodeList(11) [text, li.apple, text, li.orange, text, li.avocado, text, li.grape, text, li.banana, text]0: text1:
+    li.apple2: text3: li.orange4: text5: li.avocado6: text7: li.grape8: text9: li.banana10: textlength: 11[[Prototype]]:
+    NodeList
+    appleslist.firstChild
+    #textassignedSlot: nullbaseURI: "file:///C:/Users/itsbh/Desktop/CipherSchools/HTML/dom_traversal.html"childNodes:
+    NodeList []data: "\n "firstChild: nullisConnected: truelastChild: nulllength: 25nextElementSibling:
+    li.applenextSibling: li.applenodeName: "#text"nodeType: 3nodeValue: "\n "ownerDocument: documentparentElement:
+    ul.apple-listparentNode: ul.apple-listpreviousElementSibling: nullpreviousSibling: nulltextContent: "\n "wholeText:
+    "\n "[[Prototype]]: TextassignedSlot: (...)splitText: ƒ splitText()wholeText: (...)constructor: ƒ
+    Text()Symbol(Symbol.toStringTag): "Text"baseURI: (...)childNodes: (...)data: (...)firstChild: (...)isConnected:
+    (...)lastChild: (...)length: (...)nextElementSibling: (...)nextSibling: (...)nodeName: (...)nodeType:
+    (...)nodeValue: (...)ownerDocument: (...)parentElement: (...)parentNode: (...)previousElementSibling:
+    (...)previousSibling: (...)textContent: (...)get assignedSlot: ƒ assignedSlot()get wholeText: ƒ
+    wholeText()[[Prototype]]: CharacterData
+    appleslist.lastChild
+    #textassignedSlot: nullbaseURI: "file:///C:/Users/itsbh/Desktop/CipherSchools/HTML/dom_traversal.html"childNodes:
+    NodeList []data: "\n "firstChild: nullisConnected: truelastChild: nulllength: 21nextElementSibling: nullnextSibling:
+    nullnodeName: "#text"nodeType: 3nodeValue: "\n "ownerDocument: documentparentElement: ul.apple-listparentNode:
+    ul.apple-listpreviousElementSibling: li.bananapreviousSibling: li.bananatextContent: "\n "wholeText: "\n
+    "[[Prototype]]: Text
+    appleslist.parentElement
+    <div class=​"wrapper-1">​…​</div>​
+    appleslist.parentNode
+    <div class=​"wrapper-1">​…​</div>​
+    const btn1 = document.querySelector(".btn-1")
+    undefined
+    btn1.closest("main")
+    <main>​…​</main>​
+    btn1
+    <button class=​"btn-1">​Read Full List​</button>​
+    const orange = document.querySelector(".orange")
+    undefined
+    const apple = orange.previousElementSibling;
+    undefined
+    const avocado = orange.nextElementSibling;
+    undefined
+    apple
+    <li class=​"apple">​…​</li>​
+    avocado
+    <li class=​"avocado">​…​</li>​
