@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./test.css"> -->
+    <title>Page Title</title>
+</head>
+
+<body>
+    <main>
+        <!-- <h1 onclick="this.innerHTML=`This is after click`">My Page</h1> -->
+        <h1 onclick=changeText(this)>My Page</h1>
+
+        
+            <div>
+                <button onclick="displaydate()">Time</button>
+                <p id="demo"></p>
+            </div>
+            <form>
+                <input type="text" id="firstname" onchange="upperCase()">
+            </form>
+            <!-- <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: brown; width: 120px; height: 20px; padding: 40px;"> -->
+            <div onmousedown="mdown(this)" onmouseout="mup(this)" style="background-color: brown; width: 120px; height: 20px; padding: 40px;">
+
+                Mouse over me
+            </div>
+    </main>
+    <script>
+        function changeText(id)
+        {
+            id.innerHTML=`This is after click`;
+        }
+        function displaydate()
+        {
+            document.getElementById("demo").innerHTML=new Date();
+        }
+        function upperCase()
+        {
+            const x = document.getElementById("firstname");
+            x.value = x.value.toUpperCase();
+        }
+        function mOver(obj)
+        {
+            obj.innerHTML="thank you";
+        }
+        function mOut(obj)
+        {
+            obj.innerHTML="mouse over me"
+        }
+        function mdown(obj)
+        {
+            obj.style.backgroundColor = "cyan";
+            obj.innerHTML="Release me";
+        }
+        function mup(obj) {
+                obj.style.backgroundColor = "red";
+                obj.innerHTML = "Thank you";
+            }
+    </script>
+</body>
+
+</html>
