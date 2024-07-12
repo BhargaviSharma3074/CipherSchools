@@ -1,0 +1,122 @@
+//1.
+// let person = {
+//     firstname: "Bhargavi",
+//     lastname: "Sharma",
+//     getfullname: function()
+//     {
+//         return `The name of the person is ${person.firstname} ${person.lastname}`;
+//     },
+//     phonenumber: {
+//         mobile: "123454",
+//         landline: "245651",
+//     },
+// };
+// console.log(person.getfullname());
+// console.log(person.phonenumber.landline);
+//2.
+// function person(firstname, lastname)
+// {
+//     this.firstname = firstname;
+//     this.lastname = lastname;
+// }
+// let person1 = new person("Bhargavi","Sharma");
+// let person2 = new person("Bhavya", "Sharma");
+// console.log(person1.firstname);
+// console.log(`${person2.firstname} ${person2.lastname}`);
+//3.
+// const coder = 
+// {
+//     isstudying: false,
+//     printintroduction: function()
+//     {
+//         console.log(`My name is ${this.name}. Am i studying?: ${this.isstudying}`);
+//     },
+// };
+// const me = Object.create(coder);
+// me.name = "Bhargavi Sharma";
+// me.isstudying = true;
+// me.printintroduction();
+
+// class vehicle
+// {
+//     constructor(name, maker, engine)
+//     {
+//         this.name = name;
+//         this.maker = maker;
+//         this.engine = engine;
+//     }
+//     getdetails()
+//     {
+//         return `The name of the vehicle is ${this.name}`;
+//     }
+// }
+
+// let v1 = new vehicle("Creta","Hyundai","2500 CC");
+// let v2 = new vehicle("Q5","Audi","3000 CC");
+// console.log(v1.name);
+// console.log(v2.maker);
+// console.log(v1.getdetails());
+
+// function vehicle(name, maker, engine)
+// {
+//     this.name=name;
+//     this.maker=maker;
+//     this.engine=engine;
+// }
+// vehicle.prototype.getdetails=function()
+// {
+//     return(`The name of the vehicle is ${this.name}`);
+// }
+// let v1 = new vehicle("Creta","Hyundai","2500 CC");
+// let v2 = new vehicle("Q5","Audi","3000 CC");
+// console.log(v1.name);
+// console.log(v2.maker);
+// console.log(v1.getdetails());
+
+class person
+{
+    constructor(firstname, lastname)
+    {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+    getdetails = function ()
+    {
+        return `Firstname is ${this.firstname} and lastname is ${this.lastname}`;
+
+    }
+    // let getdetails_noaccess = function()
+    // {
+    //     return `Firstname is ${this.firstname} and lastname is ${this.lastname}`;
+    // };
+    // this.getdetails_access = function ()
+    // {
+    //     return `Firstname is ${this.firstname} and lastname is ${this.lastname}`;
+
+    // }
+}
+class student extends person
+{
+    constructor(firstname, lastname, rollnum)
+    {
+        super(firstname, lastname);
+        this.rollnum = rollnum;
+    }
+    getdetails = function ()
+    {
+        return `firstname is ${this.firstname} and lastname is ${this.lastname} and the rollnumber is ${this.rollnum}`;
+
+    };
+}
+
+
+// let person1 = new person("Bhargavi","Sharma");
+// console.log(person1.firstname);
+// console.log(person1.getdetails_noaccess());
+// console.log(person1.getdetails_access());
+
+let person1 = new person("Bhargavi","Sharma");
+console.log(person1.firstname);
+console.log(person1.getdetails());
+let student1 = new student("Bhavya","Sharma","2");
+console.log(student1.getdetails());
