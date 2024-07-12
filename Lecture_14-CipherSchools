@@ -1,0 +1,3 @@
+create-react-app first-app
+cd first-app
+npm start
