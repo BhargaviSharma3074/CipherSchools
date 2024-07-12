@@ -1,0 +1,20 @@
+jsx was explained
+and certain changes were made to app.js in src folder in order to explain
+
+function App() {
+  const name = 'CipherSchools!';
+  return (
+    <div>
+    <div>
+      <h1 style={{
+        color: "red",
+        textAlign: "center",
+      }}>Hello from {name}</h1>
+    </div>
+    {/* must be wrapped in one parent element only */}
+    <div>
+      <p>Second div</p>
+    </div>
+    </div>
+  );
+}
