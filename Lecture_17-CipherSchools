@@ -1,0 +1,48 @@
+1. Recact components are LIKE functions
+2. They contain some logical code and they return some UI
+3. They, just like functions they accept arguments that can control thr UI/logic of the components
+4. Rendering a component is like calling a function
+5. In React, a component can be represented by a JS class or a JS function 
+
+
+import logo from './logo.svg';
+import './App.css';
+import { Component } from "react";
+
+// function App() {
+//   const name = 'CipherSchools!';
+//   return (
+//     <div>
+//     <div>
+//       <h1 style={{
+//         color: "red",
+//         textAlign: "center",
+//       }}>Hello from {name}</h1>
+//     </div>
+//     {/* must be wrapped in one parent element only */}
+//     <div>
+//       <p>Second div</p>
+//     </div>
+//     </div>
+//   );
+// }
+
+class App extends Component
+{
+  name = "CipherSchools";
+  render() //must always return some sort of ui
+  {
+    return (
+      <>
+      <div>
+        <h1>This is {this.name}!</h1>
+      </div>
+      <div>
+        <p>This is paragraph and name is: {this.name}</p>
+      </div>
+      </>
+    );
+  }
+}
+
+export default App;
