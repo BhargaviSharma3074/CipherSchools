@@ -1,0 +1,34 @@
+//App.js
+import { Component } from "react";
+import ToDoScreen from "./screens/ToDoScreen";
+class App extends Component
+{
+    render()
+    {
+        return (
+            <ToDoScreen></ToDoScreen>
+        )
+    }
+}
+
+export default App;
+--------------------------------------------------------------------------------------
+//ToDoScreen.js
+import { Component } from "react";
+
+class ToDoScreen extends Component
+{
+    render()
+    {
+        return(
+            <h1 className="ui heading center">To Do List</h1>
+        )
+    }
+}
+
+export default ToDoScreen;
+--------------------------------------------------------------------------------------
+//index.css
+.center{
+  text-align: center;
+}
